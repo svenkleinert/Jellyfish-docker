@@ -15,3 +15,5 @@ To run the CMD version no graphical forwarding is required but the entrypoint ne
 ```bash
 docker run -it -v .:/data --entrypoint JellyfishCMD svenkleinert/jellyfish
 ```
+
+To run JellyfishCMD in a HPC singularity environment, you can use the definition file located in the singularity folder.
