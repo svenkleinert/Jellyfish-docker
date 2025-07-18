@@ -18,11 +18,11 @@ git \
 libc-devtools \
 "
 
+COPY . /opt/Jellyfish
+
 RUN \
     apt-get update && \
     apt-get -y --no-install-recommends install $JELLYFISH_BUILT_DEPS && \
-    cd /opt && \
-    git clone $JELLYFISH_REPO /opt/Jellyfish && \
     cd /opt/Jellyfish && \
     mkdir build && \
     cd build && \
